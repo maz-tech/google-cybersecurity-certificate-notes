@@ -2,23 +2,29 @@
 
 ### Network interception attacks
 
-Intercept network traffic, interfere with it or steal data e.g. packet sniffing.
+- Intercept network traffic and steal information, or interfere with transmission 
+- e.g. packet sniffing: use of hardware or software to capture and inspect data
 
 ### Backdoor attacks
 
-Weaknesses intentionally introduced by programmers / admins, or by a hacker after the initial intrusion.
+- Weaknesses intentionally left by programmers snf sys/network admins that bypass access control mechanisms, or installed by a hacker after the initial intrusion.
 
 ## Possible impacts on an org
 
-- Financial (loss of sales, fines, overtime)
+- Financial (loss of revenue, reparation costs, litigation/settlment costs, fines)
 - Reputation
-- Public safety (e.g. government org hacked)
+- Public safety (e.g. government hacked)
+
+## Dos Attacks
+
+- Flooding network or server with network traffic
+- DDOS: Uses mutliple devices or servers in diff locations to flood network
 
 ## Common DoS attacks
 
-- SYN flood attack: Simulates lots of initial "synchronise" packets from the TCP/IP handshake, using up all the ports on the server.
-- ICMP (status update protocol): Repeatedly send ICMP packets to server, server has to respond to all.
-- Ping of death: Sending a malformed packet (especially ICMP) can cause a server to break.
+- SYN flood attack: Simulates lots of initial "synchronise" packets from the TCP/IP handshake, using up all the ports on the server. Simulates a TCP connection and floods server with SYN packets
+- ICMP, Internet Control Message Protocol, flood attack (status update protocol): Repeatedly send ICMP packets to server, server has to respond to all.
+- Ping of death: Sending a device/system a malformed/oversized packet (especially ICMP) can cause a server to crash.
 
 ## Network protocol analyser
 
