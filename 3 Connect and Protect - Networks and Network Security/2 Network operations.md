@@ -83,11 +83,12 @@ Network security device that monitors traffic to/from your network. Can include 
 - Next generation firewall (NGFW): Stateful, plus deep packet inspection, intrusion protection, connection with cloud-based threat intelligence services
 
 ## VPNs
-A network security service that changes your public IP address and hides your virtual location. Encrypts data, hides location, changes IP, encapsulates data, etc. Encapsulation wraps sensitive data inside other data packets, that is then unwrapped at the other end.
+- A network security service that changes your public IP address and hides your virtual location. Encrypts data, hides location, changes IP, encapsulates data, etc. - Encapsulation wraps sensitive data inside other data packets, that is then unwrapped at the other end.
+- Remote access and site-to-site VPNs: Former typical for individual users and latter for enterpirises extending their network to other networks and locations. 
 
-2 common protocols:
+VPN protocols:
 
-1. WireGuard: Designed to be simple to set up, newer, open source.
+1. WireGuard: High speed, advanced encryption, designed to be simple to set up, newer, open source.
 2. IPSec: More widely supported, more complex, but also more widely tested / adopted.
 
 ## Network segmentation
@@ -95,29 +96,33 @@ A network security service that changes your public IP address and hides your vi
 - Security zones: Segment of network protecting internal network from wider internet. E.g. untrusted guest wifi.
 - Subnetworks: Network might have subnets to isolate departments etc.
 
-### Controlled zones
+### Security zones
 
-- Uncontrolled zone: Any zone outside org's control, e.g. internet.
-- Controlled zone: Subnet that protects internal from uncontrolled.
-  - DMZ: Demilitarized zone, public facing services like web servers, DNS servers, email.
+- Uncontrolled zone: Any network outside org's control, e.g. internet.
+- Controlled zone: Subnet that protects internal network from uncontrolled zones.
+  - DMZ: Demilitarized zone, public facing services that can access the internet like web servers, DNS servers, proxy servers, email and file servers.
   - Internal network: Private internal-only servers and data.
-  - Restricted zone: Highly confidential contents only for certain employees.
+  - Restricted zone: Highly confidential information only for certain employees.
 
 Typically you'd have internet -> firewall -> DMZ -> firewall -> internal -> firewall -> restricted.
 
+### Subnetting
+
+- Subdivision of a network into logical groups called subnets
+
 ### CIDR
 
-Classless inter-domain routing, creating subnets by applying subnet masks to IP addresses. For example `198.51.100.0/24` = `198.51.100.0` - `198.51.100.255`.
+Classless Inter-Domain Routing, creating subnets by applying subnet masks to IP addresses. For example `198.51.100.0/24` = `198.51.100.0` - `198.51.100.255`.
 
 ## Proxy servers
 
-A server that fulfils requests by forwarding the request elsewhere. Can be used to hide private network IP address. Can also cache a little to reduce external contacts.
+A server that fulfils requests of a client by forwarding the request to other servers. Can be used to hide private network IP address. Uses temporary memory so, can also cache a little to reduce external contacts.
 
 Types:
 
-- Forward proxy: Handles requests FROM a user to the wider internet.
-- Reverse proxy: Handles request TO a user from the wider internet.
-- Email proxy: Handles spam emails etc.
+- Forward proxy: Regulates and restricts a user's access to the internet. Hides IP address and approves requests.
+- Reverse proxy: Regulates and resticts the internet's access to an internal server.
+- Email proxy: Filters spam emails by verifying sender's address. 
 
 ## Feedback
 
