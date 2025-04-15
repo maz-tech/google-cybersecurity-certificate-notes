@@ -83,8 +83,7 @@ Network security device that monitors traffic to/from your network. Can include 
 - Next generation firewall (NGFW): Stateful, plus deep packet inspection, intrusion protection, connection with cloud-based threat intelligence services
 
 ## VPNs
-
-Encrypts data, hide location, changes IP, etc. Encapsulation wraps sensitive data inside other data, that is then unwrapped at the other end.
+A network security service that changes your public IP address and hides your virtual location. Encrypts data, hides location, changes IP, encapsulates data, etc. Encapsulation wraps sensitive data inside other data packets, that is then unwrapped at the other end.
 
 2 common protocols:
 
