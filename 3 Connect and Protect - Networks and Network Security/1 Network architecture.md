@@ -42,11 +42,11 @@ So an example flow is device -> router -> modem -> internet -> modem -> router -
 
 ## IPv4 packet
 
-![](files/ipv4-packet.png)
+![image](https://github.com/user-attachments/assets/d843fb02-b5c9-4a8b-90d4-a6fc30b14f03)
 
 ## IPv4 vs IPv6 header
 
-![](files/ipv4-vs-ipv6.png)
+
 
 ## Feedback
 
