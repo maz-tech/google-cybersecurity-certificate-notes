@@ -47,17 +47,18 @@
 - Uses: establish baseline, detect & id malicious traffic, create customised alerts, locate unauthorised instant messaging, traffic, or WAPs
 - Used maliciously to gain info
   
+## Network Attack Tactics & Defence
 ### Packet sniffing
 
+- Malicious actors may use sofware apps or hardware devices to look into data packets
 - Passive: Data packets read in transit.
 - Active: Data packets manipulated in transit.
+- VPN / HTTPS protects from this.
 
-VPN / HTTPS protects from this.
+### IP spoofing
 
-## IP spoofing
-
-Common attacks:
-
-- On-path attack: Malicious actor places themselves in the middle, and intercepts / alters data.
-- Replay attack: Malicious actor repeats / delays a packet.
-- Smurf attack: DDoS with authorised user's IP.
+- An attacker changes the source IP of a data packet to impersonate an authorized system and gain access to a network.
+- Common attacks:
+  - On-path attack: Malicious actor places themselves in the middle, and intercepts/alters data.
+  - Replay attack: Malicious actor intercepts and delays/repeats a data packet another time.
+  - Smurf attack: DDoS with authorised user's IP.
