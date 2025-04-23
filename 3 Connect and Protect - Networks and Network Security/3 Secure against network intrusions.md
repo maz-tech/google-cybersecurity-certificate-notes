@@ -43,7 +43,7 @@
 -  Low memory, low CPU, opensource library
 -  Textbased, Linux and macOS compatible
 -  Prints info on each packet i.e timestamp, source IP & port, destination IP & port
-- ![image](https://github.com/user-attachments/assets/a06ea55f-2d49-4784-b051-e6c57bf37da9)
+  ![image](https://github.com/user-attachments/assets/a06ea55f-2d49-4784-b051-e6c57bf37da9)
 - Uses: establish baseline, detect & id malicious traffic, create customised alerts, locate unauthorised instant messaging, traffic, or WAPs
 - Used maliciously to gain info
   
