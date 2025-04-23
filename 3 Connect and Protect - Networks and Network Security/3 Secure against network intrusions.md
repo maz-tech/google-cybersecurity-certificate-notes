@@ -47,7 +47,7 @@
 - Uses: establish baseline, detect & id malicious traffic, create customised alerts, locate unauthorised instant messaging, traffic, or WAPs
 - Used maliciously to gain info
   
-## Network Attack Tactics & Defence
+## Network Attack Tactics & Defense
 ### Packet sniffing
 
 - Malicious actors may use sofware apps or hardware devices to look into data packets
@@ -59,6 +59,9 @@
 
 - An attacker changes the source IP of a data packet to impersonate an authorized system and gain access to a network.
 - Common attacks:
-  - On-path attack: Malicious actor places themselves in the middle, and intercepts/alters data.
+  - On-path attack: Malicious actor places themselves in the middle, and intercepts/alters data. AKA Man-in-the-middle attack
   - Replay attack: Malicious actor intercepts and delays/repeats a data packet another time.
-  - Smurf attack: DDoS with authorised user's IP.
+  - Smurf attack: Combination of DDoS and Spoofing attack. An attacker sniffs an authorised user's IP address and floods it with packets.
+- Defense:
+  -   Encryption i.e. using TLS
+  -   Firewalls
