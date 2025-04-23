@@ -24,7 +24,7 @@
 
 - SYN flood attack: Simulates lots of initial "synchronise" packets from the TCP/IP handshake, using up all the ports on the server. Simulates a TCP connection and floods server with SYN packets
 - ICMP, Internet Control Message Protocol, flood attack (status update protocol): Repeatedly send ICMP packets to server, server has to respond to all.
-- Ping of death: Sending a device/system a malformed/oversized packet (especially ICMP) can cause a server to crash.
+- Ping of death: Sending a device/system a malformed/oversized packet (especially ICMP) can cause a server to crash. Hacker sends a system an ICMP packet that is bigger than 64KB.
 
 ## Network protocol analyser
 
