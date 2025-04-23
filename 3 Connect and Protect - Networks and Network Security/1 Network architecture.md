@@ -46,7 +46,7 @@ So an example flow is device -> router -> modem -> internet -> modem -> router -
 
 ## IPv4 vs IPv6 header
 
-
+![image](https://github.com/user-attachments/assets/804d0fdb-6f8f-4eae-a5ba-46af1a28e3d2)
 
 ## Feedback
 
