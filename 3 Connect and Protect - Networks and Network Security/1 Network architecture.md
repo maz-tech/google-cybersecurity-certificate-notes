@@ -18,7 +18,7 @@ So an example flow is device -> router -> modem -> internet -> modem -> router -
 
 ## Network models
 
-![](files/tcpip-vs-osi-models.png)
+![image](https://github.com/user-attachments/assets/f0b1642b-2af6-4789-8a74-b23314671a51)
 
 ### TCP/IP model
 
