@@ -4,7 +4,6 @@ Security hardening: Strengthening a system to reduce its vulnerabilty and attack
 Attack surface: All the potential vulnerabilities.
 
 Conducted on:
-
 - Hardware
 - OS
 - Applications
@@ -12,26 +11,25 @@ Conducted on:
 - Databases
 - Physical space
 
-Examples are:
-
-- Patches
-- Config changes
-- Disabling used services
-- Reducing permissions
-
-Regular penetration testing also helps
+Examples of hardening procedures are:
+- Patches(software updates)
+- Device/app configuration changes
+- Disabling unused apps/services
+- Reducing access permissions
+- Regular penetration testing 
 
 ## OS hardening
 
-Regular interval tasks:
+- OS refers to the interface between computer hardware and the user
 
+### OS hardening practices
+Regular interval tasks:
 - Patch updates
+- Hardware and software disposal
+- Delete unused software apps
 - Backups
-- Wiping old hardware
-- Removing unused software
 
 One-off:
-
 - Secure encryption
 - Strong password policy
 
@@ -39,11 +37,21 @@ One-off:
 
 > A baseline configuration is a documented set of specifications within a system that is used as a basis for future builds, releases, and updates.
 
-## Preventing brute force attacks
+## Brute Force Attacks 
+- Trial-and-error process of discovering private information
+- Types:
+  - Simple brute force attacks: guess log-in credentials
+  - Dictionary attacks: list of commonly used passwords and stolen credentials from previous breaches
+    
+### Assessing Vulnerabilities 
+- Virtual Machines: Testing and exploring apps virtually
+- Sandbox environments:Testing environments that allow execution separate from your network i.e. testing patches, identifying and addressing bugs, detecting vulnerabilities
+  
+### Preventing brute force attacks
 
 - Salting & hashing
 - MFA / 2FA
-- Captcha
+- CAPTCHA / reCAPTCHA
 - Strong password policies
 
 ## Network hardening
