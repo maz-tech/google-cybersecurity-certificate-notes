@@ -1,7 +1,7 @@
 ## Introduction 
 
 - OS: Interface btwn hardware and the user 
-- Importance: Allow multiple apps to run & access external devices, enable comm btwn humans and computers
+- Importance: Allow multiple apps to run & access external devices, enable comm btwn humans and computers; Manages computer resources and memory.
 - Legacy OS: Outdated but still being used 
   
 ## Common operating systems
@@ -38,8 +38,8 @@
 - Virtual Machine: Virtual version of a physical computer (virtual CPU, storage, etc.)
 - Can run VMs using the physical hardware of a computer, dividing resources of host computer such as RAM.
 - Hypervisor: Software that manages virtual machines
-- Kernel-based Virtual Machine (KVM) is an open source hypervisor built into Linux kernel.
-- Can also have virtual servers, virtual networks, etc.
+  - Kernel-based Virtual Machine (KVM) is an open source hypervisor built into the Linux kernel.
+- Other forms of virtualizations include virtual servers, virtual networks, etc.
 
 ### Benefits of Virtual Machines 
 
