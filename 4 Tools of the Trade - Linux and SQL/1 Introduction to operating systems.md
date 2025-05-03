@@ -45,7 +45,11 @@
 
 - Security: Can provide an isolated environment(sandbox) on the physical host machine, providing layer of security. Not to be trusted fully.
 - Efficiency: Can open multiple virtual machines at once and switch easily between them, streamlining security tasks.
-- 
+
+### User Interface 
+- A program that allows the user to control the functions of the OS
+  - Graphical User Interface (GUI): uses graphics/icons; one request  
+  - Command Line Interface (CLI): text-based; multiple requests; records history file
 
 ## Feedback
 
