@@ -8,9 +8,12 @@
 ## Factoids
 
 - Linux licensed under GNU public license.
-- Over 600 distros developed, each includes the same kernel, but different utils, package manager, installer, UI.
+- Over 600 distributions developed, each includes the same kernel, but different utils, package manager, installer, UI.
+- Uses in security:
+  - Examining logs
+  - Verifying access and authorization in IAM system
 
-## Architecture
+## Linux Architecture
 
 - User: The person using the computer, duh. Multiple can use at once.
 - Applications: Program that performs a specific task. Often installed with a package manager.
