@@ -29,32 +29,31 @@
 - Different Linux distributions contain different preinstalled programs, user interfaces, etc., but same kernel. 
 - Distributions include the kernel, utilities, a package management system, and an installer.
 - There are parent distros and distros derived from other distros
-  
-  ### Parent & Derived Distros
-  
-From Debian (uses package manager dpkg: `.deb`, and/or package management tool APT: Advanced Package Tool):
-
-- KALI LINUX: Designed for pen tests and digital forensics, widely used in offensive cybersecurity.
-- Ubuntu: User friendly distro, lots of community resources.
-- Parrot: Similar to Kali Linux, but has a friendly GUI.
-
-From Red Hat (uses package manager RPM: Red Hat Package Manager, and/or package management tool YUM: Yellowdog Updater Modified):
-
-- Red Hat Enterprise Linux: Subscription based, dedicated support team, for enterprise use.
-- CentOS: Similar to Red Hat, but similar and without support.
 
 ## KALI LINUX 
 - Should be used in virtual machine to prevent damage. VM can revert to previous state.
+  
 - Pen testing tools in KALI LINUX:
   - Metasploit (look for/exploit vulnerabilities in machines)
   - Burp Suite (test for weaknesses in web apps)
   - John the Ripper (to guess passwords)
-
-Digital forensic tools:
-
-- tcpdump
-- Wireshark
-- Autopsy
+    
+- Digital Forensics Toosl in KALI LINUX:
+  - tcpdump (command line packet analyzer to capture network traffic)
+  - Wireshark (has GUI, analyse live and captured network traffic)
+  - Autopsy (analyse hard drives and phones)
+ 
+  ### Other Parent & Derived Linux Distros
+  
+- Debian (uses package manager dpkg: `.deb`, and/or package management tool APT: Advanced Package Tool):
+  - KALI LINUX: Designed for pen tests and digital forensics, widely used in offensive cybersecurity.
+  - Ubuntu: User friendly distro, lots of community resources.
+  - Parrot: Similar to Kali Linux, but has a friendly GUI.
+    
+- Red Hat (uses package manager RPM: Red Hat Package Manager, and/or package management tool YUM: Yellowdog Updater Modified):
+  - Red Hat Enterprise Linux: Subscription based, dedicated support team, for enterprise use.
+  - CentOS: Similar to Red Hat, but similar and without support.
+  - AlmaLinux (Replacement of CentOS 8)
 
 ## Shell
 
