@@ -38,7 +38,7 @@
   - Burp Suite (test for weaknesses in web apps)
   - John the Ripper (to guess passwords)
     
-- Digital Forensics Toosl in KALI LINUX:
+- Digital Forensics Tools in KALI LINUX:
   - tcpdump (command line packet analyzer to capture network traffic)
   - Wireshark (has GUI, analyse live and captured network traffic)
   - Autopsy (analyse hard drives and phones)
@@ -53,13 +53,22 @@
 - Red Hat (uses package manager RPM: Red Hat Package Manager, and/or package management tool YUM: Yellowdog Updater Modified):
   - Red Hat Enterprise Linux: Subscription based, dedicated support team, for enterprise use.
   - CentOS: Similar to Red Hat, but similar and without support.
-  - AlmaLinux (Replacement of CentOS 8)
+    - AlmaLinux (Replacement of CentOS 8)
+ 
+## Package Managers & Packet Management Tools
+- Package: software that can be combined with other packages to form software 
+- Package Manager: Tool to install,manage,remove.
+  -  dpkg: Debian derived distros
+  -  RPM: Red hat distros
+- Packet Management Tools: Allow users to easily work with packages through the  (command line interpreter).
+  - APT: Debian
+  - YUM: Red hat
 
-## Shell
+## 
 
 Variations:
 
-- bash: Bourne-Again Shell (default in most)
+- bash: Bourne-Again  (default in most)
 - csh: C Shell
 - ksh: Korn Shell
 - tcsh: Enhanced C Shell
