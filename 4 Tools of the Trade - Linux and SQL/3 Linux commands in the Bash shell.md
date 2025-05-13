@@ -37,9 +37,9 @@
 
 ### > & >>
 
-Similar to piping, angle brackets can send output into a file. `>` overwrites, `>>` appends.
+Similar to piping, angle brackets can send output into a file. `>` overwrites, `>>` adds to/appends.
 
-### Creating content
+### Creating and modifying directories & files
 
 - `mkdir`: MaKe DIRectory
 - `rmdir`: ReMove DIRectory
@@ -56,17 +56,40 @@ Similar to piping, angle brackets can send output into a file. `>` overwrites, `
 - Ctrl-O save.
 - Ctrl-X exit.
 
-## Permissions
+## File Permissions & Ownership
 
-- 3 types of permission: Read, Write, Execute.
-- 3 types of owner: User, Group (that user is in), Other.
-- E.g. `drwxrwxrwx` = `d`irectory, `r`eadable, `w`ritable, and e`x`ecutable by all.
-- "World-writable file" = User, group, and other can all write to a file.
+- 3 types of permission in Linux:
+  - Read: read file contents or read files in directory 
+  - Write: modification of file contents or creation of new files in directory
+  - Execute: execute file or enter directory and access files
+    
+- 3 types of owners:
+  - User
+  - Group
+  - Other
+  
+- Representation of file permissions through 10-character string: `drwxrwxrwx`
+  - `d`irectory
+  - `r`eadable
+  - `w`ritable,
+  - e`x`ecutable by all.
+  - `-` for regular file or whenever user lacks permission.
+  - "World-writable file" = User, group, and other can all write to a file (security risk).
 
-### chmod
+## Checking Permissions through Options
 
-- `ch`ange `mod`e: Change perms on files & directories.
+Modify command behaviour eg. to check permissions
+- `ls -l` displays permissions.
+- `ls -a` displays hidden files.
+- `ls -la` displays hidden files and permissions.
+  
+### Change Permissions
+
+- chmod: `ch`ange `mod`e: Change perms on files & directories.
 - E.g. Symbolic mode: `chmod g+w,o-r access.txt` = Modify access.txt, `g`roup add `w`rite, `o`ther remove `r`ead.
+  - Adds: chmod u+rwx,g+rwx,o+rwx login_sessions.txt
+  - Assigns: chmod u=r,g=r,o=r login_sessions.txt
+  - Removes: chmod u-rwx,g-rwx,o-rwx login_sessions.txt
 - `chown` also exists, to change who owns a file.
 
 ### Users
@@ -81,11 +104,7 @@ Similar to piping, angle brackets can send output into a file. `>` overwrites, `
   - Can change name with `-l`.
   - Can lock account with `-L`.
 
-## Options
 
-- `ls -l` displays permissions.
-- `ls -a` display hidden files.
-- `ls -la` displays hidden files and permissions.
 
 ## Looking up info
 
