@@ -94,16 +94,24 @@ Modify command behaviour eg. to check permissions
 
 ### Users
 
-- "root user" or "superuser" can read/write/delete anything.
-- Any superuser can create new superusers.
+- "root user" or "superuser": can read/write/delete any file & run any program.
+- A superuser can add new users.
+- Problems logging in as s/u:
+  - Security risk (should have log ins disabled)
+  - Irreversib;e mistakes
+  - Accountability (sudo command is solution)
 - `sudo` (super-user-do): Temporarily run as superuser, only available to users in the "sudoers file".
-- `useradd`: Add a user, e.g. `sudo useradd myusername`.
+- `useradd`: Add a user, e.g. `sudo useradd myusername`. For groups:
+  - `-g` adds to primary group e.g. `sudo useradd -g security fgarcia` 
+  - `-G` adds to secondary group(s) e.g. `sudo useradd -G finance,admin fgarcia `
 - `userdel`: Delete a user, e.g. `sudo userdel myusername`.
+  - `-r`: deletes user and all files in their home directory e.g. `sudo userdel -r fgarcia`
 - `usermod`: Modify a user, e.g.
-  - Can modify default group membership with `sudo usermod -g mygroup myusername`, and additional group membership with `-G`.
-  - Can change name with `-l`.
-  - Can lock account with `-L`.
-
+  - Modify default group membership with `sudo usermod -g mygroup myusername`, and additional group membership with `-G`.
+  - `-d`: change user's home directory
+  - `-l`: Can change login name
+  - `-L`: Can lock account
+- `chown`: change file/directory owner e.g. `sudo chown john access.txt`, or for group owners `sudo chown :security access.txt`
 
 
 ## Looking up info
