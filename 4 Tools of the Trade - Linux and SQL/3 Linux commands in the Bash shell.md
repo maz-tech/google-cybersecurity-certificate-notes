@@ -105,9 +105,11 @@ Modify command behaviour eg. to check permissions
   - `-g` adds to primary group e.g. `sudo useradd -g security fgarcia` 
   - `-G` adds to secondary group(s) e.g. `sudo useradd -G finance,admin fgarcia `
 - `userdel`: Delete a user, e.g. `sudo userdel myusername`.
-  - `-r`: deletes user and all files in their home directory e.g. `sudo userdel -r fgarcia`
+  - Follow up with: `sudo groupdel fgarcia` (When you create a new user, a group with the same name as the user is automatically created) 
+  -  `-r`: deletes user and all files in their home directory e.g. `sudo userdel -r fgarcia`
 - `usermod`: Modify a user, e.g.
-  - Modify default group membership with `sudo usermod -g mygroup myusername`, and additional group membership with `-G`.
+  - `-g`: Modify default group membership with `sudo usermod -g mygroup myusername`
+  -  `-a -G`: add user to supplemental group sudo `usermod -a -G marketing fgarcia` 
   - `-d`: change user's home directory
   - `-l`: Can change login name
   - `-L`: Can lock account
@@ -118,7 +120,7 @@ Modify command behaviour eg. to check permissions
 
 - `man`: Displays full info on how commands work, comes from `man`ual.
 - `whatis`: Provides a one-line summary of a command.
-- `apropos`: Search man docs by a term, can also call with `-a` for multiple terms.
+- `apropos`: Search man docs by a term, can also call with `-a` for multiple terms eg. `apropos -a change password`
 
 ## Feedback
 
