@@ -122,7 +122,13 @@
       FULL OUTER JOIN machines ON employees.device_id = machines.device_id;`
       
     - Difference: Inner joins only return rows that match on a specified column, but outer joins also return rows that don't match on the specified column.
-    - 
+
+  ## Aggregate Functions
+  - COUNT, AVG, SUM
+  - e.g.
+    SELECT COUNT(firstname)
+    FROM customers
+    WHERE country = 'USA';
     
 
 
