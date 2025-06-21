@@ -93,6 +93,36 @@
     `SELECT firstname, lastname, email, country
     FROM customers
     WHERE NOT country = 'Canada' AND NOT country = 'USA';`
+
+    ## Join Tables
+    - INNER JOIN
+    - Syntax:
+      `SELECT *
+      FROM employees
+      INNER JOIN machines ON employees.device_id = machines.device_id;`
+    - SELECT* returns columnns existing in both tables twice. If you want to return one of matching columns:
+      `SELECT username, operating_system, employees.device_id
+      FROM  employees
+      INNER JOIN machines ON employees.device_id = machines.device_id;`
+    
+    - OUTER JOINS: LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN
+    - LEFT JOIN
+      `SELECT *
+      FROM employees
+      LEFT JOIN machines ON employees.device_id = machines.device_id;`
+      
+    - RIGHT JOIN
+      `SELECT *
+      FROM employees
+      RIGHT JOIN machines ON employees.device_id = machines.device_id;`
+ 
+    - FULL OUTER JOIN
+      `SELECT *
+      FROM employees
+      FULL OUTER JOIN machines ON employees.device_id = machines.device_id;`
+      
+    - Difference: Inner joins only return rows that match on a specified column, but outer joins also return rows that don't match on the specified column.
+    - 
     
 
 
